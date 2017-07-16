@@ -1,4 +1,4 @@
-name = OpenCh
+name = opench
 description = Landing page template for Open Charity
 version = "1"
 core = 7.x
