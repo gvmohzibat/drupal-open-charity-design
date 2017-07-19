@@ -118,20 +118,26 @@
 		<div class="content clearfix">
 			<h1 class="l-section-title">Blog</h1>
 			<div class="section-content l-column-container">
-				<?php
-				$posts = $page['content']['system_main']['nodes'];
-				unset($posts['#sorted']);
-				foreach ($posts as $post) {
-				    $post = json_decode(json_encode($post['body']['#object']), true);?>
-					<div class="blog-post l-column4 is-column-spaced">
-						<h1 class="is-colored-bold"><?php echo substr($post['title'], 0, 37); ?></h1>
-						<p><?php
-						$content = $post['body']['und'][0]['value'];
-					    $summary = (strlen($content) > 230) ? substr($content, 0, 230) . "&hellip;" : $content;
-					    echo $summary?></p>
-						<span class="post-date"><?php echo date('d M Y', $post['created']) ?></span>
+				<div class="slider">
+					<span class="slider-direction-button slider-direction-left"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+					<div class="slider-container clearfix">
+						<?php
+						$posts = $page['content']['system_main']['nodes'];
+						unset($posts['#sorted']);
+						foreach ($posts as $post) {
+						    $post = json_decode(json_encode($post['body']['#object']), true);?>
+							<div class="blog-post l-column4 is-column-spaced slider-item">
+								<h1 class="is-colored-bold"><?php echo substr($post['title'], 0, 37); ?></h1>
+								<p><?php
+								$content = $post['body']['und'][0]['value'];
+							    $summary = (strlen($content) > 230) ? substr($content, 0, 230) . "&hellip;" : $content;
+							    echo $summary?></p>
+								<span class="post-date"><?php echo date('d M Y', $post['created']) ?></span>
+							</div>
+						<?php } ?>
 					</div>
-				<?php }?>
+					<span class="slider-direction-button slider-direction-right"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+				</div>
 			</div>
 		</div>
 	</section>

@@ -319,6 +319,29 @@ hr {
 	}
 }
 
+.slider {
+	position: relative;
+	.slider-container {
+		overflow: hidden;
+	}
+	.slider-direction-button {
+	    position: absolute;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    cursor: pointer;
+	}
+	.slider-direction-right {
+		right: -30px;
+	}
+	.slider-direction-left {
+		left: -30px;
+	}
+	.slider-direction-button i.fa {
+	    font-size: 56px;
+	    color: $main-color;
+	}
+}
+
 $image-background: #53c0d6;
 $image-width-height: 45px;
 $image-padding: 20px;
@@ -379,7 +402,7 @@ $image-box-half: $image-width-height/2+$image-border-width+$image-padding;
 #blog {
 	.blog-post {
 		h1 {
-			border-bottom: 1px solid #f1f2f5;
+			border-bottom: 1px solid $light-grey;
 			padding-bottom: 12px;
 			font-size: 100%;
 			margin-top: 0;
@@ -398,7 +421,7 @@ $image-box-half: $image-width-height/2+$image-border-width+$image-padding;
 			display: block;
 			margin-top: 20px;
 			padding-top: 25px;
-			border-top: 1px solid #f1f2f5;
+			border-top: 1px solid $light-grey;
 		}
 	}
 }
