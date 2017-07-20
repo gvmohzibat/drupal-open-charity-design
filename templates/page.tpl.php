@@ -105,12 +105,17 @@
 	<section id="our-members" class="l-section is-background-light-grey">
 		<div class="content is-text-centered clearfix">
 			<h1 class="l-section-title">Our members</h1>
-			<div class="section-content l-column-container">
-				<div class="member l-column5 is-column-spaced"><img src="<?php print $directory;?>/images/cruk.png"></div>
-				<div class="member l-column5 is-column-spaced"><img src="<?php print $directory;?>/images/compucorp.png"></div>
-				<div class="member l-column5 is-column-spaced"><img src="<?php print $directory;?>/images/kop.png"></div>
-				<div class="member l-column5 is-column-spaced"><img src="<?php print $directory;?>/images/zing.png"></div>
-				<div class="member l-column5 is-column-spaced"><img src="<?php print $directory;?>/images/comicrelief.png"></div>
+			<div class="slider">
+				<div class="section-content l-column-container slider-container">
+					<div class="member l-column5 is-column-spaced"><img src="<?php print $directory;?>/images/cruk.png"></div>
+					<div class="member l-column5 is-column-spaced"><img src="<?php print $directory;?>/images/compucorp.png"></div>
+					<div class="member l-column5 is-column-spaced"><img src="<?php print $directory;?>/images/kop.png"></div>
+					<div class="member l-column5 is-column-spaced"><img src="<?php print $directory;?>/images/zing.png"></div>
+					<div class="member l-column5 is-column-spaced"><img src="<?php print $directory;?>/images/comicrelief.png"></div>
+					<!-- more items to test the slider -->
+					<div class="member l-column5 is-column-spaced"><img src="<?php print $directory;?>/images/kop.png"></div>
+					<div class="member l-column5 is-column-spaced"><img src="<?php print $directory;?>/images/cruk.png"></div>
+				</div>
 			</div>
 		</div>
 	</section>
