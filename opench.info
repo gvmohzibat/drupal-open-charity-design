@@ -9,3 +9,18 @@ scripts[] = js/theme.js
 
 regions[main_menu] = Main Menu
 regions[content] = Content
+
+settings[show_get_involved] = 1
+settings[meetup_link] = "#"
+settings[slack_link] = "#"
+settings[google_link] = "#"
+settings[show_our_mission] = 1
+settings[first_section_title] = "We help charities"
+settings[second_section_title] = "We help charities"
+settings[third_section_title] = "We help charities"
+settings[first_section_content] = "share knowledge and working practice to make the best technology choices."
+settings[second_section_content] = "share knowledge and working practice to make the best technology choices."
+settings[third_section_content] = "share knowledge and working practice to make the best technology choices."
+settings[social_link_twitter] = "#"
+settings[social_link_facebook] = "#"
+settings[social_link_google] = "#"

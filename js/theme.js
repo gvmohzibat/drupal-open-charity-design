@@ -7,8 +7,7 @@ $(document).ready(function() {
 
 function blogPostsSlider() {
 	var items = $("#blog .blog-post");
-	var right_button = $("#blog .slider .slider-direction-right");
-	var left_button = $("#blog .slider .slider-direction-left");
+	var slider = $("#blog .slider");
 	var slider_container = $("#blog .slider .slider-container");
 
 	if (window.matchMedia('(max-width: 768px)'))
@@ -18,8 +17,18 @@ function blogPostsSlider() {
 	else
 		var items_visiable_count = 1;
 
+
 	var items_count = $(items).length;
 	var last_item_index = items_visiable_count - 1;
+
+	if (items_visiable_count > items_count) return;
+
+	if (!$("#blog .slider .slider-direction-right").length) {
+		$(slider).prepend('<span class="slider-direction-button slider-direction-left"><i class="fa fa-angle-left" aria-hidden="true"></i></span>');
+		$(slider).append('<span class="slider-direction-button slider-direction-right"><i class="fa fa-angle-right" aria-hidden="true"></i></span>')
+	}
+	var right_button = $("#blog .slider .slider-direction-right");
+	var left_button = $("#blog .slider .slider-direction-left");
 
 	// hiding items and just keep the first 4 items
 	$.each(items, function(index, item) {
