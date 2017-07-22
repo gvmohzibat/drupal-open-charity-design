@@ -1,7 +1,8 @@
-name = opench
+name = Open Charity
 description = Landing page template for Open Charity
-version = "1"
+version = VERSION
 core = 7.x
+screenshot = images/screenshot.png
 
 stylesheets[all][] = css/style.css
 scripts[] = js/theme.js

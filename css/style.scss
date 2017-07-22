@@ -40,6 +40,12 @@ $slier-nav-buttons-color: #979eb2;
 	   -moz-box-shadow: $shadow;
 			box-shadow: $shadow;
 }
+@mixin transform($transform) {
+	-webkit-transform: $transform;
+	   -moz-transform: $transform;
+	    -ms-transform: $transform;
+			transform: $transform;
+}
 
 
 /* --------------------- Base Rules --------------------- */
@@ -328,7 +334,7 @@ hr {
 	.slider-direction-button {
 	    position: absolute;
 	    top: 50%;
-	    transform: translateY(-50%);
+	    @include transform(translateY(-50%));
 	    cursor: pointer;
 	}
 	.slider-direction-right {
@@ -413,7 +419,7 @@ $our-members-height: 80px;
 				max-height: 100%;
 				position: relative;
 				top: 50%;
-				transform: translateY(-50%);
+				@include transform(translateY(-50%));
 			}
 		}
 	}

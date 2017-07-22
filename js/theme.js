@@ -1,3 +1,5 @@
+// I Didn't use owlcarosel cause I thought it may not be allow to use any library and framework
+
 $(document).ready(function() {
 	blogPostsSlider();
 	ourMembersSlider();

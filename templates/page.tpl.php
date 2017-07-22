@@ -1,9 +1,11 @@
 <header id="header">
 	<nav id="top-bar" class="clearfix">
 		<div class="l-content">
+		<?php if ($logo): ?>
 			<div id="logo" class="l-horiz">
-				<a href="<?php print $base_path; ?>"><img src="<?php print $logo;?>"></a>
+				<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><img src="<?php print $logo;?>" alt="<?php print t('Home'); ?>"></a>
 			</div>
+		<?php endif; ?>
 			<div class="l-horiz l-float-right is-uppercase">
 				<div id="top-menu" class="l-horiz">
 					<?php print render($page['main_menu']);?>
@@ -127,19 +129,8 @@
 					<span class="slider-direction-button slider-direction-left"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
 					<div class="slider-container clearfix">
 						<?php
-						$posts = $page['content']['system_main']['nodes'];
-						unset($posts['#sorted']);
-						foreach ($posts as $post) {
-						    $post = json_decode(json_encode($post['body']['#object']), true);?>
-							<div class="blog-post l-column4 is-column-spaced slider-item">
-								<h1 class="is-colored-bold"><?php echo substr($post['title'], 0, 37); ?></h1>
-								<p><?php
-								$content = $post['body']['und'][0]['value'];
-							    $summary = (strlen($content) > 230) ? substr($content, 0, 230) . "&hellip;" : $content;
-							    echo $summary?></p>
-								<span class="post-date"><?php echo date('d M Y', $post['created']) ?></span>
-							</div>
-						<?php } ?>
+						print render($page['content']);
+						 ?>
 					</div>
 					<span class="slider-direction-button slider-direction-right"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
 				</div>
