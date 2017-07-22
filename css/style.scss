@@ -103,11 +103,11 @@ hr {
 
 /* --------------------- Layout Rules --------------------- */
 
-.l-fullwidth {
-	padding: 0 $page-side-margins;
+.l-content {
+	padding-left: 40px;
+	padding-right: 40px;
 }
 .l-section {
-	@extend .l-fullwidth;
 	padding-bottom: 41px;
 	padding-top: 15px;
 }
@@ -172,7 +172,7 @@ hr {
 // Top bar
 #top-bar {
 	background: #fff;
-	height: $top-bar-height;
+	min-height: $top-bar-height;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -419,15 +419,17 @@ $our-members-height: 80px;
 	}
 }
 
+$blog-title-padding-bottom: 12px;
+$blog-title-height: 17px;
 #blog {
 	.blog-post {
 		h1 {
 			border-bottom: 1px solid $light-grey;
-			padding-bottom: 12px;
+			padding-bottom: $blog-title-padding-bottom;
 			font-size: 100%;
 			margin-top: 0;
-			line-height: 17px;
-			height: 17px;
+			line-height: $blog-title-padding-bottom + $blog-title-height;
+			height: $blog-title-height;
 			overflow: hidden;
 		}
 		p {
@@ -496,6 +498,7 @@ $our-members-height: 80px;
 }
 .is-button-large {
 	width: 241px;
+	max-width: 100%;
 	display: inline-block;
 }
 
@@ -536,33 +539,49 @@ $our-members-height: 80px;
 
 
 // responsive
-@media (min-width:320px) {
-	.content {
+@media (max-width:480px) {
+	.l-content {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
 }
 
+@media (max-width:640px) {
+	.l-column3, .l-column4, .l-column5 {
+	    width: 100%;
+	}
+}
+
+@media (max-width:640px) {
+	.slider .slider-nav .slider-nav-button {
+	    margin: 0 15px;
+	}
+}
+
+@media (max-width:768px) {
+	#blog .l-column4 {
+		width: 50% !important;
+	}
+}
+
 @media (min-width:768px) {
-	.content {
+	.l-content {
 		max-width: 670px;
 		margin-left: auto;
 		margin-right: auto;
-		padding-left: 0;
-		padding-right: 0
 	}
 }
 
 @media (min-width:960px) {
-	.content {
+	.l-content {
 		max-width: 865px;
 		margin-left: auto;
-		margin-right: auto
+		margin-right: auto;
 	}
 }
 
 @media (min-width:1266px) {
-	.content {
+	.l-content {
 		max-width: 1110px;
 		margin-left: auto;
 		margin-right: auto;

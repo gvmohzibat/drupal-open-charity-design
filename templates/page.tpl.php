@@ -1,6 +1,6 @@
 <header id="header">
-	<nav id="top-bar" class="clearfix l-fullwidth">
-		<div class="content">
+	<nav id="top-bar" class="clearfix">
+		<div class="l-content">
 			<div id="logo" class="l-horiz">
 				<a href="<?php print $base_path; ?>"><img src="<?php print $logo;?>"></a>
 			</div>
@@ -19,8 +19,8 @@
 		</div>
 	</nav>
 
-	<div id="header-intro" class="l-fullwidth is-text-centered">
-		<div class="content">
+	<div id="header-intro" class="is-text-centered">
+		<div class="l-content">
 			<div id="intro-content">
 				<h1 class="is-uppercase">Sharing ideas for charities</h1>
 				<p class="first-intro-par">Many charities' goals are similar as is the functionality we require, but little shared woring takes place.</p>
@@ -32,7 +32,7 @@
 </header>
 <main>
 	<section id="events" class="l-section is-background-light-grey">
-		<div class="is-vertical-align-container content">
+		<div class="is-vertical-align-container l-content">
 			<div id="event-content">
 				<h3><span class="is-colored-bold">Next Event:</span> June 23<sup>rd</sup> 2016 &nbsp; 18:30 - 21:00</h3>
 				<p>Cancer Research UK, Angel Building, 407 St John Street, London EC1V 4AD</p>
@@ -42,7 +42,7 @@
 	</section>
 	<div class="clearfix"></div>
 	<section id="get-involved" class="l-section">
-		<div class="content is-text-centered clearfix">
+		<div class="l-content is-text-centered clearfix">
 			<h1 class="l-section-title">Get Involved</h1>
 			<div class="section-content l-column-container">
 				<div class="l-column3 is-column-spaced">
@@ -67,7 +67,7 @@
 		</div>
 	</section>
 	<section id="our-mission" class="l-section is-background-light-grey">
-		<div class="content is-text-centered clearfix">
+		<div class="l-content is-text-centered clearfix">
 			<h1 class="l-section-title">Our mission</h1>
 			<p>Charities and Partners collaborating and sharing open solutions and ideas to create value in digital space.</p>
 			<p class="is-bold second-mission-par">If you are a charity or supplier, we are ready to welcome you.</p>
@@ -103,7 +103,7 @@
 		</div>
 	</section>
 	<section id="our-members" class="l-section is-background-light-grey">
-		<div class="content is-text-centered clearfix">
+		<div class="l-content is-text-centered clearfix">
 			<h1 class="l-section-title">Our members</h1>
 			<div class="slider">
 				<div class="section-content l-column-container slider-container">
@@ -120,7 +120,7 @@
 		</div>
 	</section>
 	<section id="blog" class="l-section">
-		<div class="content clearfix">
+		<div class="l-content clearfix">
 			<h1 class="l-section-title">Blog</h1>
 			<div class="section-content l-column-container">
 				<div class="slider">
@@ -148,7 +148,7 @@
 	</section>
 </main>
 <footer id="footer">
-	<div class="content">
+	<div class="l-content">
 		<div id="social-links" class="is-colored is-text-centered clearfix">
 			<ul class="l-list-menu">
 				<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
