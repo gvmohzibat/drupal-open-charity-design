@@ -12,9 +12,9 @@
 				</div>
 				<div id="join-us" class="l-horiz">
 					<?php if ($logged_in): ?>
-						<a class="is-button is-button-outlined" href="<?php base_path();?>user/logout">Log Out</a>
+						<a class="is-button is-button-outlined" href="<?php echo $front_page;?>user/logout">Log Out</a>
 					<?php else: ?>
-						<a class="is-button is-button-outlined" href="<?php base_path();?>user/login">Join us</a>
+						<a class="is-button is-button-outlined" href="<?php echo $front_page;?>user/login">Join us</a>
 					<?php endif;?>
 				</div>
 			</div>
