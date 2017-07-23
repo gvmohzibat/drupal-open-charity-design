@@ -6,3 +6,4 @@ You just need the copy the folder to yousite.com/sites/all/themes/ then go to Dr
 
 ## Configuration
 After enabling the theme choose "settings" and configure the texts an links
+![Settings](https://image.ibb.co/n655vQ/Screenshot_from_2017_07_23_21_32_36.png)
